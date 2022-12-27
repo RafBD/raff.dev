@@ -1,0 +1,594 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --github: #f25032;
+    --linkedin: #0e76a8;
+    --twitter: #00acee;
+    --verde: #006847;
+    --blanco: #f3f8f9;
+    --rojo: #CE1126;
+    --negro: #000;
+    --moradoOscuro: #202040;
+    --morado: #c146ff;
+    --moradoClaro: #9e57fa;
+    --moradoBg: #4D3E83;
+    --azul: #202060;
+    --rosa: #B030B0;
+    --bgColor: #1C1C1C;
+    --titleFont: 'Fjalla One', sans-serif;
+    --font: 'Space Mono', monospace;
+}
+
+/* UTILIDADES */
+* {
+    box-sizing: border-box;
+}
+
+*::selection {
+    color: var(--morado);
+}
+
+*::-moz-selection {
+    color: var(--moradoClaro);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.white {
+    color: var(--blanco);
+}
+
+.darkImg {
+    background-color: white;
+    border-radius: 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    font-family: var(--font);
+    background-color: var(--blanco);
+}
+
+.oscuro {
+    background-color: var(--bgColor);
+    color: var(--blanco);
+}
+
+.container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    margin: auto;
+    max-width: 1152px;
+}
+
+.letrasMoradas {
+    color: var(--moradoClaro);
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Courgette', cursive;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+}
+
+.darkMode {
+    background-color: transparent;
+    width: 4rem;
+    margin-top: -.3rem;
+    cursor: pointer;
+    border: none;
+}
+
+.div-icon-menu {
+    width: 4rem;
+}
+
+.presentation {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.presentation-div {
+    justify-content: space-between;
+    align-content: space-between;
+    place-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 460px;
+}
+
+.bienvenido {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+}
+
+.aprendeConmigo {
+    gap: 0.5rem;
+    place-items: center;
+    width: 100%;
+    display: grid;
+    margin-top: 3.5rem;
+    grid-column-end: 4;
+    grid-column-start: 1;
+}
+
+.aprendeConmigo-description {
+    text-align: center;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+}
+
+.aprendeConmigo-description>h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.aprendeConmigo-description>p {
+    font-size: 1.6rem;
+    padding: 0 2rem;
+}
+
+.tiktok-embed {
+    width: 100%;
+    height: 50rem;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+}
+
+.span-footer {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.footer-icons {
+    width: 50%;
+    display: flex;
+}
+
+.icons {
+    font-size: 2.4rem;
+    margin: 2rem;
+    width: 100px;
+}
+
+.github {
+    color: var(--github);
+}
+
+.linkedin {
+    color: var(--linkedin);
+}
+
+.twitter {
+    color: var(--twitter);
+}
+
+/* Proyectos */
+.titleProjects {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    font-family: var(--titleFont);
+    letter-spacing: .3rem;
+}
+
+.projects {
+    padding: .75rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 0%;
+    display: flex;
+}
+
+.proyectos {
+    border-radius: .375rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 1rem;
+    box-shadow: 0px 0px 5px 5px rgba(141, 141, 141, 0.51);
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(131, 131, 131, 0.51);
+    -moz-box-shadow: 0px 0px 5px 05px rgba(150, 150, 150, 0.51);
+}
+
+.proyectos>img {
+    aspect-ratio: 16 / 9;
+    padding: .5rem;
+}
+
+.nameProject {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: -1rem;
+    font-family: var(--font);
+}
+
+.footerProjects {
+    margin-top: 6rem;
+}
+
+/* ABOUT */
+
+.img-me {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+
+.img-me>img {
+    border-radius: 1rem;
+}
+
+.container-skills {
+    align-items: center;
+    width: 20rem;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-skills>h2 {
+    padding: 1.5rem 0;
+    text-align: center;
+    font-family: var(--titleFont);
+    font-style: italic;
+}
+
+.a-resume {
+    margin-top: 1.5rem;
+}
+
+.link-resume {
+    background-color: var(--moradoBg);
+    color: var(--blanco);
+    font-size: 1.7rem;
+    padding: .8rem;
+    border-radius: .5rem;
+}
+
+/* SKILLS */
+.skills-title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about-me-skills {
+    align-content: center;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 7rem;
+}
+
+.description-about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    line-height: 2.3rem;
+}
+
+/* CONTACT */
+.contact-me {
+    padding: 0rem 3rem;
+}
+
+#contact {
+    margin-top: 6rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.input-form {
+    border: 1.5px solid var(--bgColor);
+    border-radius: 1rem;
+    color: var(--bgColor);
+    font-size: 1.7rem;
+    height: 4rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+form>.input-form:focus {
+    border-color: var(--moradoClaro);
+    outline: 0 none;
+}
+
+
+.form>textarea {
+    height: 15rem;
+}
+
+.form>legend {
+    position: relative;
+    top: 0rem;
+    font-weight: 600;
+    z-index: 10;
+    left: 1rem;
+    letter-spacing: .3rem;
+}
+
+.send {
+    text-align: center;
+    padding: 1rem;
+    width: 190px;
+    margin-bottom: 5rem;
+    background-color: var(--moradoClaro);
+    border: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: var(--negro);
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#trucazo {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .navegacion {
+        padding: 1rem;
+        position: absolute;
+        background-color: #cba3ff;
+        border-top-right-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+        z-index: 20;
+        width: 60%;
+        height: 100vh;
+        font-size: 2rem;
+        top: 0rem;
+        left: -2rem;
+    }
+
+    .navegacionDark {
+        background-color: #4D3E83;
+    }
+
+    .mostrar {
+        display: none;
+    }
+
+    .navegacion-enlaces {
+        display: grid;
+        gap: 3rem;
+        font-weight: 400;
+    }
+
+    .img-me {
+        font-size: 1.3rem;
+        margin-top: 5rem;
+    }
+
+    .img-me>img {
+        width: 22rem;
+    }
+
+    .description-about {
+        font-size: 1.3rem;
+    }
+
+    /* SKILLS */
+    .skills-title {
+        font-size: 2.3rem;
+        margin-top: 5rem;
+    }
+
+    .about-me-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-skills>h2 {
+        font-size: 2rem;
+    }
+
+    .container-skills>img {
+        width: 7rem;
+    }
+
+    /* CONTACT ME */
+    #contact {
+        font-size: 2rem;
+    }
+
+    .form>legend {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .div-icon-menu {
+        display: none;
+    }
+
+    .navegacion {
+        display: block;
+    }
+
+    .navegacion-enlaces {
+        display: flex;
+        gap: 3rem;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .presentation-div {
+        height: 60rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .bienvenido {
+        font-size: 5rem;
+    }
+
+    .container-img-div {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .aprendeConmigo {
+        gap: 2rem;
+        margin-top: 2.5rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 1rem;
+        align-items: center;
+        padding: 0 5rem;
+    }
+
+    .aprendeConmigo-div {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        place-items: center;
+        width: 100%;
+        margin-top: 3.5rem;
+        grid-column-end: 4;
+        grid-column-start: 1;
+    }
+
+    .aprendeConmigo-description>h2 {
+        font-size: 3rem;
+    }
+
+    .aprendeConmigo-description>p {
+        padding: 0 3rem;
+        font-size: 1.8rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    .icons {
+        font-size: 2.4rem;
+        margin: 2rem;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ABOUT-ME */
+    .container-aboutMe {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        align-content: center;
+        justify-items: center;
+        text-align: justify;
+        margin: 10rem;
+    }
+
+    .img-me>img {
+        width: 35rem;
+    }
+
+    .description-about {
+        font-size: 1.5rem;
+    }
+
+    .link-resume {
+        font-size: 2rem;
+    }
+
+    /* SKILLS */
+    .skills-title {
+        font-size: 3rem;
+    }
+
+    .about-me-skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container-skills>h2 {
+        font-size: 2.3rem;
+    }
+
+    .container-skills>img {
+        width: 8rem;
+    }
+
+    /* CONTACT ME */
+    #contact {
+        font-size: 2.8rem;
+    }
+
+    .form>legend {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (min-width: 1056px) {
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
