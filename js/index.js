@@ -1,15 +1,21 @@
 const darkModeButton = document.getElementById('darkModeButton');
+const navegacion = document.querySelector('#navegacion');
+const iconMenu = document.querySelector('.buttonMenu');
 
-// MOSTRAR MENU
-function mostrarMenu() {
-    navegacion.classList.toggle('mostrar');
-    navegacion.style.transition = 'display 2s ease'
-}
+iconMenu.addEventListener('click', () => {
+    if (navegacion.classList.contains('activo')) {
+        console.log('si tiene activo');
+        navegacion.classList.remove('activo');
+
+    } else {
+        console.log('no tiene activo');
+        navegacion.classList.add('activo');
+    }
+});
 
 // DARK MODE
-darkModeButton.addEventListener('click', darkMode);
+darkModeButton.addEventListener('click', () => {
 
-function darkMode() {
     // class white, oscuro, darkImg
     const html = document.querySelector('html');
     const navLinks = document.querySelector('.navEnlaces');
@@ -17,18 +23,9 @@ function darkMode() {
     const raffDev = document.querySelector('.title');
     const navegacionCelularOscuro = document.querySelector('.navegacion');
 
-
-
-
     html.classList.toggle('oscuro');
     navLinks.classList.toggle('white');
     navLinks1.classList.toggle('white');
     raffDev.classList.toggle('white');
     navegacionCelularOscuro.classList.toggle('navegacionDark');
-
-}
-
-
-
-
-
+});
