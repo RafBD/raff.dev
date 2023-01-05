@@ -45,6 +45,11 @@ a {
     color: var(--negro);
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 .white {
     color: var(--blanco);
 }
@@ -64,6 +69,7 @@ html {
 .oscuro {
     background-color: var(--bgColor);
     color: var(--blanco);
+    transition: all .25s ease;
 }
 
 .container {
@@ -386,7 +392,7 @@ form>.input-form:focus {
 @media screen and (max-width: 767px) {
     .navegacion {
         padding: 1rem;
-        position: absolute;
+        position: fixed;
         background-color: #cba3ff;
         border-top-right-radius: .75rem;
         border-bottom-right-radius: .75rem;
@@ -396,14 +402,16 @@ form>.input-form:focus {
         font-size: 2rem;
         top: 0rem;
         left: -2rem;
+        transition: all .2s ease-in;
     }
 
     .navegacionDark {
         background-color: #4D3E83;
+        transition: all .25s ease-in;
     }
 
-    .mostrar {
-        display: none;
+    .activo {
+        left: -200rem;
     }
 
     .navegacion-enlaces {
