@@ -248,10 +248,27 @@ footer {
     padding: .5rem;
 }
 
+.container-buttons-demo-repo {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.demo {
+    background-color: var(--moradoBg);
+    color: var(--blanco);
+    padding: .5rem;
+    border-radius: .375rem;
+    width: 100%;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
 .nameProject {
     text-align: center;
-    font-size: 1.3rem;
-    margin: -1rem;
+    font-size: 2rem;
+    margin: -.5rem;
     font-family: var(--font);
 }
 
@@ -478,6 +495,16 @@ form>.input-form:focus {
         font-size: 2rem;
     }
 
+    .navEnlaces {
+        padding: .5rem;
+        border-radius: 1rem;
+    }
+
+    .navEnlaces:hover {
+        background-color: var(--moradoClaro);
+        transition: all .4s ease-in;
+    }
+
     .presentation-div {
         height: 60rem;
     }
@@ -538,6 +565,7 @@ form>.input-form:focus {
         margin: 2rem;
     }
 
+    /* PROJECTS */
     .projects {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -550,7 +578,6 @@ form>.input-form:focus {
         gap: 3rem;
         align-content: center;
         justify-items: center;
-        text-align: justify;
         margin: 10rem;
     }
 
