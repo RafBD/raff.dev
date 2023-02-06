@@ -578,7 +578,7 @@ form>.input-form:focus {
         gap: 3rem;
         align-content: center;
         justify-items: center;
-        margin: 10rem;
+        margin: 0 10rem;
     }
 
     .img-me>img {
@@ -596,6 +596,7 @@ form>.input-form:focus {
     /* SKILLS */
     .skills-title {
         font-size: 3rem;
+        margin-top: 10rem;
     }
 
     .about-me-skills {
