@@ -28,11 +28,8 @@
 }
 
 *::selection {
-    color: var(--morado);
-}
-
-*::-moz-selection {
-    color: var(--moradoClaro);
+    color: var(--blanco);
+    background-color: var(--moradoClaro);
 }
 
 img {
