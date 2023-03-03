@@ -99,6 +99,9 @@ button {
     border-radius: 3rem;
 }
 
+#earthIcon {
+    transition: all .5s ease-in;
+}
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
