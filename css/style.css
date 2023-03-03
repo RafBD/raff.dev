@@ -150,6 +150,10 @@ header {
     border: none;
 }
 
+.fa-earth-americas {
+    color: var(--negro);
+}
+
 .div-icon-menu {
     width: 4rem;
 }

@@ -1,6 +1,7 @@
-const darkModeButton = document.getElementById('darkModeButton');
+const darkModeButton = document.querySelector('#darkModeButton');
 const navegacion = document.querySelector('#navegacion');
 const iconMenu = document.querySelector('.buttonMenu');
+const earthIcon = document.querySelector('#earthIcon');
 
 iconMenu.addEventListener('click', () => {
     if (navegacion.classList.contains('activo')) {
@@ -23,9 +24,24 @@ darkModeButton.addEventListener('click', () => {
     const raffDev = document.querySelector('.title');
     const navegacionCelularOscuro = document.querySelector('.navegacion');
 
-    html.classList.toggle('oscuro');
-    navLinks.classList.toggle('white');
-    navLinks1.classList.toggle('white');
-    raffDev.classList.toggle('white');
-    navegacionCelularOscuro.classList.toggle('navegacionDark');
+    function darkMode () {
+        html.classList.toggle('oscuro');
+        navLinks.classList.toggle('white');
+        navLinks1.classList.toggle('white');
+        raffDev.classList.toggle('white');
+        navegacionCelularOscuro.classList.toggle('navegacionDark');
+    }
+
+    function iconEarth () {
+        if (earthIcon.classList.contains('fa-lightbulb')) {
+            earthIcon.classList.remove('fa-lightbulb', 'white');
+            earthIcon.classList.add ('fa-earth-americas');
+        } else {
+            earthIcon.classList.add('fa-lightbulb', 'white');
+            earthIcon.classList.remove('fa-earth-americas');
+        }
+    }
+
+    darkMode();
+    iconEarth();
 });
