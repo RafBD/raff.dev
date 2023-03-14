@@ -45,3 +45,4 @@ darkModeButton.addEventListener('click', () => {
     darkMode();
     iconEarth();
 });
+
